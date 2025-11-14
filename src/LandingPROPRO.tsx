@@ -45,147 +45,146 @@ export default function LandingPROPRO() {
         </section>
 
       {/* HOW IT WORKS — estilo Pitch con videos */}
-<section className="px-6 py-24 md:py-32 bg-background">
-  <div className="max-w-5xl mx-auto">
-    <Reveal>
-    <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-16">
-      ¿Cómo funciona PRO&PRO?
-    </h2>
-    </Reveal>
+      <section className="px-6 py-24 md:py-32 bg-background">
+        <div className="max-w-5xl mx-auto">
+          <Reveal>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-16">
+              ¿Cómo funciona PRO&PRO?
+            </h2>
+          </Reveal>
 
-    <div className="space-y-24">
-      {/* PASO 1 — video izquierda */}
-      <SlideIn from="left">
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-          {/* Video */}
-          <div className="flex justify-center md:justify-start">
-            <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
-              <video
-                src="/videos/registro.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-                aria-label="Video tutorial de registro en PRO&PRO"
-                className="absolute inset-0 w-full h-full object-cover"
-              />
+          <div className="space-y-24">
+            {/* PASO 1 — video izquierda */}
+            <SlideIn from="left">
+              <div className="grid md:grid-cols-2 gap-10 items-center">
+                {/* Video */}
+                <div className="flex justify-center md:justify-start">
+                  <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
+                    <video
+                      src="/videos/registro.mp4"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      aria-label="Video tutorial de registro en PRO&PRO"
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+                {/* Texto */}
+                <div>
+                  <h3 className="text-2xl font-bold mb-3">
+                    1. Registrate e iniciá tu aventura
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Creá tu cuenta y comenzá el recorrido diseñado para guiarte paso a paso.
+                  </p>
+                </div>
+              </div>
+            </SlideIn>
+
+            {/* PASO 2 — video derecha */}
+            <SlideIn from="right">
+              <div className="grid md:grid-cols-2 gap-10 items-center">
+                {/* Texto (a la izquierda en desktop) */}
+                <div className="order-2 md:order-1">
+                  <h3 className="text-2xl font-bold mb-3">
+                    2. Descubrí tus posibilidades
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Explorá tus intereses con actividades creadas para ayudarte a entender tu perfil.
+                  </p>
+                </div>
+                {/* Video (a la derecha en desktop) */}
+                <div className="flex justify-center md:justify-end order-1 md:order-2">
+                  <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
+                    <video
+                      src="/videos/comenzar.mp4"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      aria-label="Video tutorial para comenzar en PRO&PRO"
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            </SlideIn>
+
+            {/* PASO 3 — video izquierda */}
+            <SlideIn from="left">
+              <div className="grid md:grid-cols-2 gap-10 items-center">
+                {/* Video */}
+                <div className="flex justify-center md:justify-start">
+                  <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
+                    <video
+                      src="/videos/tutorial.mp4"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      aria-label="Video tutorial interactivo de PRO&PRO"
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+                {/* Texto */}
+                <div>
+                  <h3 className="text-2xl font-bold mb-3">
+                    3. Intentá el tutorial
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Practicá con un tutorial interactivo para entender cada dinámica antes de comenzar.
+                  </p>
+                </div>
+              </div>
+            </SlideIn>
+
+            {/* PASO 4 — video derecha */}
+            <SlideIn from="right">
+              <div className="grid md:grid-cols-2 gap-10 items-center">
+                {/* Texto (izquierda en desktop) */}
+                <div className="order-2 md:order-1">
+                  <h3 className="text-2xl font-bold mb-3">
+                    4. Consultá el glosario
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Accedé a definiciones claras para comprender conceptos clave durante tu proceso.
+                  </p>
+                </div>
+                {/* Video (derecha en desktop) */}
+                <div className="flex justify-center md:justify-end order-1 md:order-2">
+                  <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
+                    <video
+                      src="/videos/glosario.mp4"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      aria-label="Video del glosario de PRO&PRO"
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            </SlideIn>
+          </div>
+
+          {/* CTA final de sección */}
+          <Reveal delay={0.1}>
+            <div className="text-center mt-24">
+              <Button
+                size="lg"
+                className="rounded-2xl bg-primary text-primary-foreground hover:bg-primary/90"
+                onClick={() => window.open("https://explorador-vocacional.vercel.app/", "_self")}
+              >
+                Comenzar ahora
+              </Button>
             </div>
-          </div>
-          {/* Texto */}
-          <div>
-            <h3 className="text-2xl font-bold mb-3">
-              1. Registrate e iniciá tu aventura
-            </h3>
-            <p className="text-muted-foreground">
-              Creá tu cuenta y comenzá el recorrido diseñado para guiarte paso a paso.
-            </p>
-          </div>
+          </Reveal>
         </div>
-      </SlideIn>
-
-      {/* PASO 2 — video derecha */}
-      <SlideIn from="right">
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-          {/* Texto (a la izquierda en desktop) */}
-          <div className="order-2 md:order-1">
-            <h3 className="text-2xl font-bold mb-3">
-              2. Descubrí tus posibilidades
-            </h3>
-            <p className="text-muted-foreground">
-              Explorá tus intereses con actividades creadas para ayudarte a entender tu perfil.
-            </p>
-          </div>
-          {/* Video (a la derecha en desktop) */}
-          <div className="flex justify-center md:justify-end order-1 md:order-2">
-            <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
-              <video
-                src="/videos/comenzar.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-                aria-label="Video tutorial para comenzar en PRO&PRO"
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </SlideIn>
-
-      {/* PASO 3 — video izquierda */}
-      <SlideIn from="left">
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-          {/* Video */}
-          <div className="flex justify-center md:justify-start">
-            <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
-              <video
-                src="/videos/tutorial.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-                aria-label="Video tutorial interactivo de PRO&PRO"
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-            </div>
-          </div>
-          {/* Texto */}
-          <div>
-            <h3 className="text-2xl font-bold mb-3">
-              3. Intentá el tutorial
-            </h3>
-            <p className="text-muted-foreground">
-              Practicá con un tutorial interactivo para entender cada dinámica antes de comenzar.
-            </p>
-          </div>
-        </div>
-      </SlideIn>
-
-      {/* PASO 4 — video derecha */}
-      <SlideIn from="right">
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-          {/* Texto (izquierda en desktop) */}
-          <div className="order-2 md:order-1">
-            <h3 className="text-2xl font-bold mb-3">
-              4. Consultá el glosario
-            </h3>
-            <p className="text-muted-foreground">
-              Accedé a definiciones claras para comprender conceptos clave durante tu proceso.
-            </p>
-          </div>
-          {/* Video (derecha en desktop) */}
-          <div className="flex justify-center md:justify-end order-1 md:order-2">
-            <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
-              <video
-                src="/videos/glosario.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-                aria-label="Video del glosario de PRO&PRO"
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </SlideIn>
-    </div>
-
-    {/* CTA final de sección */}
-    <Reveal delay={0.1}>
-    <div className="text-center mt-24">
-      <Button
-        size="lg"
-        className="rounded-2xl bg-primary text-primary-foreground hover:bg-primary/90"
-        onClick={() => window.open("https://explorador-vocacional.vercel.app/", "_self")}
-      >
-        Comenzar ahora
-      </Button>
-    </div>
-    </Reveal>
-  </div>
-</section>
-
+      </section>
 
       {/* CONTACTO */}
       <section id="contact" className="px-6 py-16 md:py-20 bg-background">
