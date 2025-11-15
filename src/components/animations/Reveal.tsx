@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-export default function Reveal({
+export function Reveal({
   children,
   delay = 0,
 }: {
