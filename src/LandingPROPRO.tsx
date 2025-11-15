@@ -61,134 +61,84 @@ export default function LandingPROPRO() {
           <div className="space-y-24">
             {/* PASO 1 — video izquierda */}
             <SlideIn from="left">
-              <div className="grid md:grid-cols-2 gap-10 items-center">
-                {/* Video */}
-                <div className="flex justify-center md:justify-start">
-                  <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
-                    <video
-  autoPlay
-  muted
-  loop
-  playsInline
-  controls
-  preload="metadata"
-  className="absolute inset-0 w-full h-full object-cover"
->
-  <source src={registroVideo} type="video/mp4" />
-  Tu navegador no soporta video HTML5.
-</video>
-
-                  </div>
-                </div>
-                {/* Texto */}
-                <div>
-                  <h3 className="text-2xl font-bold mb-3">
-                    1. Registrate e iniciá tu aventura
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Creá tu cuenta y comenzá el recorrido diseñado para guiarte paso a paso.
-                  </p>
-                </div>
-              </div>
+              <div className="flex justify-center md:justify-start">
+  <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      controls
+      preload="metadata"
+      className="absolute inset-0 w-full h-full object-cover"
+    >
+      <source src={registroVideo} type="video/mp4" />
+      Tu navegador no soporta video HTML5.
+    </video>
+  </div>
+</div>
             </SlideIn>
 
             {/* PASO 2 — video derecha */}
             <SlideIn from="right">
-              <div className="grid md:grid-cols-2 gap-10 items-center">
-                {/* Texto (a la izquierda en desktop) */}
-                <div className="order-2 md:order-1">
-                  <h3 className="text-2xl font-bold mb-3">
-                    2. Descubrí tus posibilidades
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Explorá tus intereses con actividades creadas para ayudarte a entender tu perfil.
-                  </p>
-                </div>
-                {/* Video (a la derecha en desktop) */}
-                <div className="flex justify-center md:justify-end order-1 md:order-2">
-                  <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
-                    <video
-  autoPlay
-  muted
-  loop
-  playsInline
-  controls
-  preload="metadata"
-  className="absolute inset-0 w-full h-full object-cover"
->
- <source src={comenzarVideo} type="video/mp4" />
-  Tu navegador no soporta video HTML5.
-</video>
+              <div className="flex justify-center md:justify-start">
+  <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      controls
+      preload="metadata"
+      className="absolute inset-0 w-full h-full object-cover"
+    >
+      <source src={comenzarVideo} type="video/mp4" />
+      Tu navegador no soporta video HTML5.
+    </video>
+  </div>
+</div>
 
-                  </div>
-                </div>
-              </div>
             </SlideIn>
 
             {/* PASO 3 — video izquierda */}
             <SlideIn from="left">
-              <div className="grid md:grid-cols-2 gap-10 items-center">
-                {/* Video */}
-                <div className="flex justify-center md:justify-start">
-                  <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
-                   <video
-  autoPlay
-  muted
-  loop
-  playsInline
-  controls
-  preload="metadata"
-  className="absolute inset-0 w-full h-full object-cover"
->
-  <source src={tutorialVideo} type="video/mp4" />
-  Tu navegador no soporta video HTML5.
-</video>
-
-                  </div>
-                </div>
-                {/* Texto */}
-                <div>
-                  <h3 className="text-2xl font-bold mb-3">
-                    3. Intentá el tutorial
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Practicá con un tutorial interactivo para entender cada dinámica antes de comenzar.
-                  </p>
-                </div>
-              </div>
+              <div className="flex justify-center md:justify-start">
+  <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      controls
+      preload="metadata"
+      className="absolute inset-0 w-full h-full object-cover"
+    >
+      <source src={tutorialVideo} type="video/mp4" />
+      Tu navegador no soporta video HTML5.
+    </video>
+  </div>
+</div>
             </SlideIn>
 
             {/* PASO 4 — video derecha */}
             <SlideIn from="right">
-              <div className="grid md:grid-cols-2 gap-10 items-center">
-                {/* Texto (izquierda en desktop) */}
-                <div className="order-2 md:order-1">
-                  <h3 className="text-2xl font-bold mb-3">
-                    4. Consultá el glosario
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Accedé a definiciones claras para comprender conceptos clave durante tu proceso.
-                  </p>
-                </div>
-                {/* Video (derecha en desktop) */}
-                <div className="flex justify-center md:justify-end order-1 md:order-2">
-                  <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
-                    <video
-  autoPlay
-  muted
-  loop
-  playsInline
-  controls
-  preload="metadata"
-  className="absolute inset-0 w-full h-full object-cover"
->
-  <source src={glosarioVideo} type="video/mp4" />
-  Tu navegador no soporta video HTML5.
-</video>
+              <div className="flex justify-center md:justify-start">
+  <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      controls
+      preload="metadata"
+      className="absolute inset-0 w-full h-full object-cover"
+    >
+      <source src={glosarioVideo} type="video/mp4" />
+      Tu navegador no soporta video HTML5.
+    </video>
+  </div>
+</div>
 
-                  </div>
-                </div>
-              </div>
             </SlideIn>
           </div>
 
