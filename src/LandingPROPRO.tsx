@@ -61,15 +61,17 @@ export default function LandingPROPRO() {
                 <div className="flex justify-center md:justify-start">
                   <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
                     <video
-                      src="/videos/registro.mp4"
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      controls
-                      aria-label="Video tutorial de registro en PRO&PRO"
-                      className="absolute inset-0 w-full h-full object-cover"
-                    />
+  autoPlay
+  muted
+  loop
+  playsInline
+  controls
+  preload="metadata"
+  className="absolute inset-0 w-full h-full object-cover"
+>
+  <source src="/videos/registro.mp4" type="video/mp4" />
+  Tu navegador no soporta video HTML5.
+</video>
                   </div>
                 </div>
                 {/* Texto */}
@@ -100,15 +102,17 @@ export default function LandingPROPRO() {
                 <div className="flex justify-center md:justify-end order-1 md:order-2">
                   <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
                     <video
-                      src="/videos/comenzar.mp4"
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      controls
-                      aria-label="Video tutorial para comenzar en PRO&PRO"
-                      className="absolute inset-0 w-full h-full object-cover"
-                    />
+  autoPlay
+  muted
+  loop
+  playsInline
+  controls
+  preload="metadata"
+  className="absolute inset-0 w-full h-full object-cover"
+>
+  <source src="/videos/comenzar.mp4" type="video/mp4" />
+  Tu navegador no soporta video HTML5.
+</video>
                   </div>
                 </div>
               </div>
@@ -121,15 +125,17 @@ export default function LandingPROPRO() {
                 <div className="flex justify-center md:justify-start">
                   <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
                     <video
-                      src="/videos/tutorial.mp4"
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      controls
-                      aria-label="Video tutorial interactivo de PRO&PRO"
-                      className="absolute inset-0 w-full h-full object-cover"
-                    />
+  autoPlay
+  muted
+  loop
+  playsInline
+  controls
+  preload="metadata"
+  className="absolute inset-0 w-full h-full object-cover"
+>
+  <source src="/videos/tutorial.mp4" type="video/mp4" />
+  Tu navegador no soporta video HTML5.
+</video>
                   </div>
                 </div>
                 {/* Texto */}
@@ -160,15 +166,17 @@ export default function LandingPROPRO() {
                 <div className="flex justify-center md:justify-end order-1 md:order-2">
                   <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
                     <video
-                      src="/videos/glosario.mp4"
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      controls
-                      aria-label="Video del glosario de PRO&PRO"
-                      className="absolute inset-0 w-full h-full object-cover"
-                    />
+  autoPlay
+  muted
+  loop
+  playsInline
+  controls
+  preload="metadata"
+  className="absolute inset-0 w-full h-full object-cover"
+>
+  <source src="/videos/glosario.mp4" type="video/mp4" />
+  Tu navegador no soporta video HTML5.
+</video>
                   </div>
                 </div>
               </div>
