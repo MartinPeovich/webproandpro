@@ -7,8 +7,6 @@ import comenzarVideo from "@/assets/videos/comenzar.mp4";
 import glosarioVideo from "@/assets/videos/glosario.mp4";
 import tutorialVideo from "@/assets/videos/tutorial.mp4";
 
-
-
 export default function LandingPROPRO() {
   return (
     <main className="flex flex-col">
@@ -18,36 +16,43 @@ export default function LandingPROPRO() {
         <div className="pointer-events-none absolute inset-0 -z-10">
           <div className="absolute inset-0 bg-gradient-to-b from-indigo-500/10 via-transparent to-transparent dark:from-indigo-400/10" />
         </div>
+
         <Reveal>
-        <span className="inline-block rounded-full border px-3 py-1 text-xs text-muted-foreground mb-6">
-          Propósito Profesional
-        </span>
+          <span className="inline-block rounded-full border px-3 py-1 text-xs text-muted-foreground mb-6">
+            Propósito Profesional
+          </span>
         </Reveal>
 
         <Reveal delay={0.05}>
-        <h2 className="font-display text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
-          PRO&PRO{" "}
-          <span className="text-indigo-600 dark:text-indigo-400">
-            tu app de exploración vocacional.
-          </span>
-        </h2>
+          <h2 className="font-display text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
+            PRO&PRO{" "}
+            <span className="text-indigo-600 dark:text-indigo-400">
+              tu app de exploración vocacional.
+            </span>
+          </h2>
         </Reveal>
 
-          <Reveal delay={0.1}>
-        <p className="max-w-2xl mx-auto text-base md:text-lg text-muted-foreground mb-8">
-          UNLP
-        </p>
-          </Reveal>
+        <Reveal delay={0.1}>
+          <p className="max-w-2xl mx-auto text-base md:text-lg text-muted-foreground mb-8">
+            UNLP
+          </p>
+        </Reveal>
 
-          <Reveal delay={0.15}>
-        <Button
-          size="lg"
-         className="rounded-2xl gap-2"
-         onClick={() => window.open("https://explorador-vocacional.vercel.app/", "_blank")}>
-         ¡Comenzar aventura! <ArrowRight className="w-4 h-4" />
-        </Button>
-          </Reveal>
-        </section>
+        <Reveal delay={0.15}>
+          <Button
+            size="lg"
+            className="rounded-2xl gap-2"
+            onClick={() =>
+              window.open(
+                "https://explorador-vocacional.vercel.app/",
+                "_blank",
+              )
+            }
+          >
+            ¡Comenzar aventura! <ArrowRight className="w-4 h-4" />
+          </Button>
+        </Reveal>
+      </section>
 
       {/* HOW IT WORKS — estilo Pitch con videos */}
       <section className="px-6 py-24 md:py-32 bg-background">
@@ -61,84 +66,140 @@ export default function LandingPROPRO() {
           <div className="space-y-24">
             {/* PASO 1 — video izquierda */}
             <SlideIn from="left">
-              <div className="flex justify-center md:justify-start">
-  <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
-    <video
-      autoPlay
-      muted
-      loop
-      playsInline
-      controls
-      preload="metadata"
-      className="absolute inset-0 w-full h-full object-cover"
-    >
-      <source src={registroVideo} type="video/mp4" />
-      Tu navegador no soporta video HTML5.
-    </video>
-  </div>
-</div>
+              <div className="grid md:grid-cols-2 gap-10 items-center">
+                {/* Video */}
+                <div className="order-1">
+                  <div className="relative w-full max-w-md md:max-w-full mx-auto overflow-hidden rounded-3xl bg-black aspect-video">
+                    <video
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      controls
+                      preload="metadata"
+                      className="absolute inset-0 w-full h-full object-cover"
+                    >
+                      <source src={registroVideo} type="video/mp4" />
+                      Tu navegador no soporta video HTML5.
+                    </video>
+                  </div>
+                </div>
+
+                {/* Texto */}
+                <div className="order-2 space-y-3">
+                  <h3 className="text-2xl font-bold mb-1">
+                    1. Registrate e iniciá tu aventura
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Creá tu cuenta y comenzá el recorrido diseñado para
+                    guiarte paso a paso en tu exploración vocacional.
+                  </p>
+                </div>
+              </div>
             </SlideIn>
 
             {/* PASO 2 — video derecha */}
             <SlideIn from="right">
-              <div className="flex justify-center md:justify-start">
-  <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
-    <video
-      autoPlay
-      muted
-      loop
-      playsInline
-      controls
-      preload="metadata"
-      className="absolute inset-0 w-full h-full object-cover"
-    >
-      <source src={comenzarVideo} type="video/mp4" />
-      Tu navegador no soporta video HTML5.
-    </video>
-  </div>
-</div>
+              <div className="grid md:grid-cols-2 gap-10 items-center">
+                {/* Texto */}
+                <div className="order-2 md:order-1 space-y-3">
+                  <h3 className="text-2xl font-bold mb-1">
+                    2. Descubrí tus posibilidades
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Explorá tus intereses con actividades y desafíos creados
+                    para ayudarte a entender tu perfil y tus gustos.
+                  </p>
+                </div>
 
+                {/* Video */}
+                <div className="order-1 md:order-2">
+                  <div className="relative w-full max-w-md md:max-w-full mx-auto overflow-hidden rounded-3xl bg-black aspect-video">
+                    <video
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      controls
+                      preload="metadata"
+                      className="absolute inset-0 w-full h-full object-cover"
+                    >
+                      <source src={comenzarVideo} type="video/mp4" />
+                      Tu navegador no soporta video HTML5.
+                    </video>
+                  </div>
+                </div>
+              </div>
             </SlideIn>
 
             {/* PASO 3 — video izquierda */}
             <SlideIn from="left">
-              <div className="flex justify-center md:justify-start">
-  <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
-    <video
-      autoPlay
-      muted
-      loop
-      playsInline
-      controls
-      preload="metadata"
-      className="absolute inset-0 w-full h-full object-cover"
-    >
-      <source src={tutorialVideo} type="video/mp4" />
-      Tu navegador no soporta video HTML5.
-    </video>
-  </div>
-</div>
+              <div className="grid md:grid-cols-2 gap-10 items-center">
+                {/* Video */}
+                <div className="order-1">
+                  <div className="relative w-full max-w-md md:max-w-full mx-auto overflow-hidden rounded-3xl bg-black aspect-video">
+                    <video
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      controls
+                      preload="metadata"
+                      className="absolute inset-0 w-full h-full object-cover"
+                    >
+                      <source src={tutorialVideo} type="video/mp4" />
+                      Tu navegador no soporta video HTML5.
+                    </video>
+                  </div>
+                </div>
+
+                {/* Texto */}
+                <div className="order-2 space-y-3">
+                  <h3 className="text-2xl font-bold mb-1">
+                    3. Explorá el tutorial interactivo
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Recorré cada sección de la app con un tutorial guiado que
+                    te muestra cómo avanzar, jugar y registrar tus
+                    descubrimientos.
+                  </p>
+                </div>
+              </div>
             </SlideIn>
 
             {/* PASO 4 — video derecha */}
             <SlideIn from="right">
-              <div className="flex justify-center md:justify-start">
-  <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-black aspect-video">
-    <video
-      autoPlay
-      muted
-      loop
-      playsInline
-      controls
-      preload="metadata"
-      className="absolute inset-0 w-full h-full object-cover"
-    >
-      <source src={glosarioVideo} type="video/mp4" />
-      Tu navegador no soporta video HTML5.
-    </video>
-  </div>
-</div>
+              <div className="grid md:grid-cols-2 gap-10 items-center">
+                {/* Texto */}
+                <div className="order-2 md:order-1 space-y-3">
+                  <h3 className="text-2xl font-bold mb-1">
+                    4. Consultá el glosario cuando lo necesites
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Accedé a definiciones claras y ejemplos sobre conceptos
+                    vocacionales para entender mejor cada decisión que vayas
+                    tomando.
+                  </p>
+                </div>
 
+                {/* Video */}
+                <div className="order-1 md:order-2">
+                  <div className="relative w-full max-w-md md:max-w-full mx-auto overflow-hidden rounded-3xl bg-black aspect-video">
+                    <video
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      controls
+                      preload="metadata"
+                      className="absolute inset-0 w-full h-full object-cover"
+                    >
+                      <source src={glosarioVideo} type="video/mp4" />
+                      Tu navegador no soporta video HTML5.
+                    </video>
+                  </div>
+                </div>
+              </div>
             </SlideIn>
           </div>
 
@@ -148,7 +209,12 @@ export default function LandingPROPRO() {
               <Button
                 size="lg"
                 className="rounded-2xl bg-primary text-primary-foreground hover:bg-primary/90"
-                onClick={() => window.open("https://explorador-vocacional.vercel.app/", "_self")}
+                onClick={() =>
+                  window.open(
+                    "https://explorador-vocacional.vercel.app/",
+                    "_self",
+                  )
+                }
               >
                 Comenzar ahora
               </Button>
@@ -163,7 +229,9 @@ export default function LandingPROPRO() {
           <h3 className="text-2xl md:text-3xl font-display font-bold mb-6">
             ¿Charlamos sobre tu proyecto?
           </h3>
-          <p className="text-muted-foreground">Pronto agregamos el formulario.</p>
+          <p className="text-muted-foreground">
+            Pronto agregamos el formulario.
+          </p>
         </div>
       </section>
 
