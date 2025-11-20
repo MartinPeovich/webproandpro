@@ -25,9 +25,9 @@ export default function LandingPROPRO() {
 
         <Reveal delay={0.05}>
           <h2 className="font-display text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
-            {" "}
+            {"Tú guía "}
             <span className="text-indigo-600 dark:text-indigo-400">
-              Tú app de exploración vocacional.
+               de exploración vocacional.
             </span>
           </h2>
         </Reveal>
